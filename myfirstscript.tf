@@ -8,3 +8,10 @@ resource "aws_instance" "webserver" {
     security_groups = ["default"]
     key_name = "tokyo"
 }
+
+resource "aws_instance" "demo" {
+    ami = "ami-0f9a314ce79311c88"
+    instance_type = "t2.micro"
+    security_groups = ["default"]
+    key_name = "tokyo"
+}
